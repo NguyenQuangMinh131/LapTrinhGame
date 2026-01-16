@@ -1,9 +1,5 @@
 # Bài tập Unity - Lập Trình Game
 
-## 📂 Cấu trúc thư mục & Cách chấm bài
-
-Dưới đây là đường dẫn đến các Scene quan trọng để kiểm tra bài tập:
-
 ### 1. Bài tập Mathematics in Unity (Bài tập hình khối)
 Để kiểm tra phần bài tập về Hệ tọa độ, Local/World Space và Camera:
 - **Đường dẫn Scene:** `Assets/Scenes/Math.unity`
