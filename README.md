@@ -14,3 +14,11 @@
   - Di chuyển tàu (Player Movement) bằng chuột.
   - Xử lý Particle System (Hiệu ứng động cơ).
   - Background & Canvas.
+
+### 3. Bài tập Chương 3: Lab C3
+Để kiểm tra các bài Lab về Vòng đời (Lifecycle), Vector, Quaternion và Observer Pattern:
+- **Đường dẫn Scene:** `Assets/Scenes/Chương 3/`
+- **Nội dung:**
+  - **Lifecycle:** Demo vòng đời Awake, Start, Update, OnDisable, OnDestroy.
+  - **Movement & Rotation:** Di chuyển vector chuẩn hóa, xoay tháp pháo (LookAt/Slerp), tính góc (Signed Angle).
+  - **Observer Pattern:** Hệ thống máu & UI sử dụng C# Event và UnityEvent (Binding).
