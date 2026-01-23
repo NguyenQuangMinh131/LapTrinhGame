@@ -22,3 +22,10 @@
   - **Lifecycle:** Demo vòng đời Awake, Start, Update, OnDisable, OnDestroy.
   - **Movement & Rotation:** Di chuyển vector chuẩn hóa, xoay tháp pháo (LookAt/Slerp), tính góc (Signed Angle).
   - **Observer Pattern:** Hệ thống máu & UI sử dụng C# Event và UnityEvent (Binding).
+
+### 4. Demo2 - Basic Shooting
+Để kiểm tra phần Demo2:
+- **Scene**: `Battle.unity`
+- **Scripts** (nằm tại `Assets/Scrpit/Demo2/`):
+  - `Bullet.cs`: Script điều khiển viên đạn bay lên theo trục Y với tốc độ `flySpeed`.
+  - `PShooting.cs`: Script gắn vào người chơi, có nhiệm vụ sinh ra viên đạn (`bulletPrefabs`) sau mỗi khoảng thời gian `shootingInterval`.

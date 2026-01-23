@@ -1,0 +1,24 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PShooting : MonoBehaviour
+{
+    public GameObject bulletPrefabs;
+    public float shootingInterval;
+    private float lastBulletTime;
+
+    void Update()
+    {
+        if (Time.time - lastBulletTime > shootingInterval)
+        {
+            ShootBullet();
+            lastBulletTime = Time.time;
+        }
+    }
+
+    private void ShootBullet()
+    {
+        Instantiate(bulletPrefabs, transform.position, transform.rotation);
+    }
+}
