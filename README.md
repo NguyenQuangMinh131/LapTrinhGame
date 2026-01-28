@@ -29,3 +29,15 @@
 - **Scripts** (nằm tại `Assets/Scrpit/Demo2/`):
   - `Bullet.cs`: Script điều khiển viên đạn bay lên theo trục Y với tốc độ `flySpeed`.
   - `PShooting.cs`: Script gắn vào người chơi, có nhiệm vụ sinh ra viên đạn (`bulletPrefabs`) sau mỗi khoảng thời gian `shootingInterval`.
+
+### 5. Bài tập Lab 4: Video Player & Global Audio
+Để kiểm tra phần xử lý Video và Audio toàn cục:
+- **Đường dẫn Scene:** `Assets/Scenes/Lab4`
+- **Nội dung:**
+  - **Global Audio (`Lab3_GlobalAudio.cs`):**
+    - Nhấn `M` để Mute/Unmute toàn bộ âm thanh (AudioListener).
+    - Nhấn `P` để Pause/Resume toàn bộ âm thanh.
+  - **Video Player (`Lab5_Video.cs` & `Lab7_VideoEvents.cs`):**
+    - Nhấn `V` để phát Video.
+    - **Tính năng Skip:** Có nút "SKIP VIDEO" (góc phải màn hình) để bỏ qua video ngay lập tức.
+    - **Event Handling:** Xử lý sự kiện khi video chuẩn bị xong và khi kết thúc (tự động tắt player).
