@@ -41,3 +41,10 @@
     - Nhấn `V` để phát Video.
     - **Tính năng Skip:** Có nút "SKIP VIDEO" (góc phải màn hình) để bỏ qua video ngay lập tức.
     - **Event Handling:** Xử lý sự kiện khi video chuẩn bị xong và khi kết thúc (tự động tắt player).
+
+### 6. Demo3 - Tương tác Enemy & Bắn tự động
+Để kiểm tra phần Demo3:
+- **Đường dẫn Scene:** `Assets/Scenes/Demo3`
+- **Scripts** (nằm tại `Assets/Scrpit/Demo3/`):
+  - `EnemyHealth.cs`: Xử lý va chạm trigger để hủy đối tượng và tạo hiệu ứng nổ.
+  - `PShooting1.cs`: Script bắn súng liên tục khi giữ chuột trái, sinh ra đạn.
