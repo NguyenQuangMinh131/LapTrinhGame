@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHealth : Health
+public class ShipHealth : Health
 {
     public GameObject explosionPrefab;
 
     protected override void Die()
     {
         base.Die();
-        Debug.Log("Enemy died");
+        Debug.Log("Ship died");
         
         if (explosionPrefab != null)
         {

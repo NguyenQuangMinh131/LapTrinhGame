@@ -48,3 +48,20 @@
 - **Scripts** (nằm tại `Assets/Scrpit/Demo3/`):
   - `EnemyHealth.cs`: Xử lý va chạm trigger để hủy đối tượng và tạo hiệu ứng nổ.
   - `PShooting1.cs`: Script bắn súng liên tục khi giữ chuột trái, sinh ra đạn.
+
+### 7. Bài tập Lab 5: Physics & Character Control
+Để kiểm tra phần xử lý Vật lý và Điều khiển nhân vật, các script nằm tại `Assets/Scrpit/Lab5/`:
+- **Nội dung:**
+  - `CharControl.cs`: Điều khiển nhân vật di chuyển, nhảy và xử lý va chạm với môi trường.
+  - `OneWayPlatform.cs`: Hệ thống nền tảng một chiều (cho phép nhảy từ dưới lên).
+  - `TriggerTest.cs` & `CollisionTest.cs`: Phân biệt sự kiện Trigger (xuyên qua) và Collision (va chạm vật lý).
+  - `ForceTest.cs` & `CharacterPush.cs`: Tương tác vật lý, đẩy các vật thể 3D/2D.
+  - `Conveyor3D.cs`: Giả lập băng chuyền vận chuyển vật thể.
+
+### 8. Demo4 - Health System & Combat
+Hệ thống máu và chiến đấu (Combat) được xây dựng trong Demo4. Các script chính nằm tại `Assets/Scrpit/Demo4/`:
+- **Nội dung:**
+  - `Health.cs`: Class cơ sở (Base Class) quản lý máu, các hàm `TakeDamage`, `Die`.
+  - `ShipHealth.cs`: Kế thừa từ `Health`, quản lý máu Player và hiệu ứng nổ khi chết.
+  - `EnemyHealth.cs`: Kế thừa từ `Health`, quản lý máu Enemy, log thông báo và hiệu ứng nổ.
+  - `EnemyAttack.cs`: Xử lý logic Enemy gây sát thương cho Player khi va chạm.
