@@ -140,8 +140,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 908ef94232781334f83a84337eae9cde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 3
   explosionPrefab: {fileID: 1981774452263784, guid: 4e19371f43812044389be8538ddac949,
     type: 3}
+--- !u!114 &362911108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362911100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca1a821e325584f48b001f3f3f32d60f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 362911107}
+  damage: 1
 --- !u!1001 &555091862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -341,6 +356,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2001512204}
+    - targetCorrespondingSourceObject: {fileID: 1373690366928948, guid: fdaaab53a8b4c0143b19d2a2e4007e44,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2001512205}
   m_SourcePrefab: {fileID: 100100000, guid: fdaaab53a8b4c0143b19d2a2e4007e44, type: 3}
 --- !u!1001 &957882179
 PrefabInstance:
@@ -423,6 +442,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 362911107}
+    - targetCorrespondingSourceObject: {fileID: 1373690366928948, guid: fdaaab53a8b4c0143b19d2a2e4007e44,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 362911108}
   m_SourcePrefab: {fileID: 100100000, guid: fdaaab53a8b4c0143b19d2a2e4007e44, type: 3}
 --- !u!4 &1072051452 stripped
 Transform:
@@ -535,8 +558,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 908ef94232781334f83a84337eae9cde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 3
   explosionPrefab: {fileID: 1981774452263784, guid: 4e19371f43812044389be8538ddac949,
     type: 3}
+--- !u!114 &1180293473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180293465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca1a821e325584f48b001f3f3f32d60f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 1180293472}
+  damage: 1
 --- !u!1 &1238710361
 GameObject:
   m_ObjectHideFlags: 0
@@ -551,6 +589,7 @@ GameObject:
   - component: {fileID: 1238710365}
   - component: {fileID: 1238710367}
   - component: {fileID: 1238710366}
+  - component: {fileID: 1238710368}
   m_Layer: 6
   m_Name: Short-Lazer-Ship
   m_TagString: Player
@@ -790,6 +829,21 @@ PolygonCollider2D:
       - {x: -0.032, y: -0.808}
       - {x: 0.112, y: -0.79200006}
   m_UseDelaunayMesh: 0
+--- !u!114 &1238710368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238710361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bac188823d363984aa0e4f9e7a346e31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
+  explosionPrefab: {fileID: 1981774452263784, guid: 4e19371f43812044389be8538ddac949,
+    type: 3}
 --- !u!1001 &1430797338
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -871,6 +925,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1180293472}
+    - targetCorrespondingSourceObject: {fileID: 1373690366928948, guid: fdaaab53a8b4c0143b19d2a2e4007e44,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1180293473}
   m_SourcePrefab: {fileID: 100100000, guid: fdaaab53a8b4c0143b19d2a2e4007e44, type: 3}
 --- !u!1 &1534535356
 GameObject:
@@ -1144,8 +1202,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 908ef94232781334f83a84337eae9cde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 3
   explosionPrefab: {fileID: 1981774452263784, guid: 4e19371f43812044389be8538ddac949,
     type: 3}
+--- !u!114 &2001512205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001512197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca1a821e325584f48b001f3f3f32d60f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 2001512204}
+  damage: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

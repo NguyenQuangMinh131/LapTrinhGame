@@ -65,3 +65,18 @@ Hệ thống máu và chiến đấu (Combat) được xây dựng trong Demo4. 
   - `ShipHealth.cs`: Kế thừa từ `Health`, quản lý máu Player và hiệu ứng nổ khi chết.
   - `EnemyHealth.cs`: Kế thừa từ `Health`, quản lý máu Enemy, log thông báo và hiệu ứng nổ.
   - `EnemyAttack.cs`: Xử lý logic Enemy gây sát thương cho Player khi va chạm.
+
+### 9. Demo5 - Âm thanh, Game Over UI & Main Menu
+Để kiểm tra phần Demo5:
+- **Đường dẫn Scene:** `Assets/Scenes/Demo5`
+Kế thừa từ các phần trước, phần này bổ sung thêm các tính năng về âm thanh và luồng (flow) của game:
+- **Nội dung:**
+  - **Handling sounds:** 
+    - Thêm Background Music cho Battle Scene.
+    - Thêm Audio Source phát âm thanh khi bắn đạn (Bullet) và hiệu ứng vụ nổ (Explosion).
+  - **Game Over UI:** Tạo Canvas hiển thị màn hình Game Over với tùy chọn "Return to Main Menu".
+  - **Main Menu Scene (`MainMenu.unity`):** 
+    - Thiết kế giao diện Menu chính bao gồm Background không gian, Game Title và nút "Play Game".
+    - Bổ sung Background Music riêng cho màn hình Menu.
+    - Script `MainMenu.cs`: Gắn sự kiện `OnPlayButtonClicked` để load sang scene `Battle` thông qua `SceneManager.LoadScene()`.
+    - Quản lý thứ tự Scene trong **Build Settings**.
