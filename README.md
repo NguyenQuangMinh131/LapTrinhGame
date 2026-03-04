@@ -80,3 +80,4 @@ Kế thừa từ các phần trước, phần này bổ sung thêm các tính n�
     - Bổ sung Background Music riêng cho màn hình Menu.
     - Script `MainMenu.cs`: Gắn sự kiện `OnPlayButtonClicked` để load sang scene `Battle` thông qua `SceneManager.LoadScene()`.
     - Quản lý thứ tự Scene trong **Build Settings**.
+    Lab 6
