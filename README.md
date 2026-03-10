@@ -80,7 +80,13 @@ Kế thừa từ các phần trước, phần này bổ sung thêm các tính n�
     - Bổ sung Background Music riêng cho màn hình Menu.
     - Script `MainMenu.cs`: Gắn sự kiện `OnPlayButtonClicked` để load sang scene `Battle` thông qua `SceneManager.LoadScene()`.
     - Quản lý thứ tự Scene trong **Build Settings**.
-    Lab 6
-    Demo 6
-
-### 10. Lab 6: 
+### 10. Lab 6:
+### 11. Demo6: Xử lý Game Over, Game Win & Cuộn Background (Looping Background)
+Để kiểm tra phần xử lý kết thúc game và hiệu ứng background trôi liên tục, các script nằm tại `Assets/Scrpit/Demo5/` và `Assets/Scrpit/Demo6/`:
+- **Nội dung:**
+  - **Handling Game Over:** Hiển thị Game Over UI khi người chơi (Ship) chết. Sử dụng C# Event `onDead` từ `Health.cs` để kích hoạt `BattleFlow.OnGameOver()`.
+  - **Handling Game Win:** Tạo biến `static LivingEnemyCount` trong `EnemyHealth.cs` để đếm số lượng enemy còn sống. BattleFlow sẽ theo dõi biến này bằng hàm `Update()`, nếu `<= 0` sẽ gọi `OnGameWin()`.
+  - **Looping Background:** 
+    - Tạo một 3D Quad, thay đổi **Shader thành Unlit/Texture** và áp vật liệu (Material) có tùy chọn Wrap Mode là Repeat.
+    - Script `ScrollingBackground.cs`: Thay đổi `mainTextureOffset` của `Material` liên tục theo `Time.time` nhằm tạo cảm giác phi thuyền đang bay tới trước.
+  - **Return to Main Menu:** Load lại màn hình Menu khi game kết thúc thông qua `SceneManager.LoadScene()`.
