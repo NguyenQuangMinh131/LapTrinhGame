@@ -82,3 +82,5 @@ Kế thừa từ các phần trước, phần này bổ sung thêm các tính n�
     - Quản lý thứ tự Scene trong **Build Settings**.
     Lab 6
     Demo 6
+
+### 10. Lab 6: 

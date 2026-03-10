@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] private int maxHealth = 100;
+    public GameObject explosionPrefab;
+    public int defaultHealthPoint = 100;
+    public System.Action onDead;
+
     private int currentHealth;
 
     // Start is called before the first frame update
     protected virtual void Start()
     {
-        currentHealth = maxHealth;
+        currentHealth = defaultHealthPoint;
     }
 
     public void TakeDamage(int damage)  
@@ -24,6 +27,13 @@ public class Health : MonoBehaviour
 
     protected virtual void Die()
     {
-        // Default behavior (can be overridden)
+        if (explosionPrefab != null)
+        {
+            var explosion = Instantiate(explosionPrefab, transform.position, transform.rotation);
+            Destroy(explosion, 1);
+        }
+        
+        Destroy(gameObject);
+        onDead?.Invoke();
     }
 }

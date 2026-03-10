@@ -4,19 +4,14 @@ using UnityEngine;
 
 public class EnemyHealth : Health
 {
-    public GameObject explosionPrefab;
+    public static int LivingEnemyCount;
+
+    private void Awake() => LivingEnemyCount++;
 
     protected override void Die()
     {
+        LivingEnemyCount--;
         base.Die();
-        Debug.Log("Enemy died");
-        
-        if (explosionPrefab != null)
-        {
-            var explosion = Instantiate(explosionPrefab, transform.position, transform.rotation);
-            Destroy(explosion, 1);
-        }
-        
-        Destroy(gameObject);
+        Debug.Log("Enemy died, remaining: " + LivingEnemyCount);
     }
 }
