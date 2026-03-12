@@ -90,3 +90,10 @@ Kế thừa từ các phần trước, phần này bổ sung thêm các tính n�
     - Tạo một 3D Quad, thay đổi **Shader thành Unlit/Texture** và áp vật liệu (Material) có tùy chọn Wrap Mode là Repeat.
     - Script `ScrollingBackground.cs`: Thay đổi `mainTextureOffset` của `Material` liên tục theo `Time.time` nhằm tạo cảm giác phi thuyền đang bay tới trước.
   - **Return to Main Menu:** Load lại màn hình Menu khi game kết thúc thông qua `SceneManager.LoadScene()`.
+
+### 12. Bài tập Lab 7: UI & Event System
+Để kiểm tra phần xử lý giao diện người dùng (UI), các script nằm tại `Assets/Scrpit/lab7/`:
+- **Đường dẫn Scene:** `Assets/Scenes/Lab7/Lab7.unity`
+- **Nội dung:**
+  - `UIManager.cs`: Chứa các hàm cơ bản để quản lý Menu như bắt đầu game (`StartGame()`), thoát game (`ExitGame()`), và hiển thị/ẩn bảng Cài đặt (`settingsPanel`).
+  - `DeLog.cs`: Dùng để gắn vào các Nút bấm (Button), cung cấp hàm `LogMessage()` in tin nhắn ra Console để kiểm thử sự kiện (OnClick Event).
