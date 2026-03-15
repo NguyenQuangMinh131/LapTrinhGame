@@ -97,3 +97,5 @@ Kế thừa từ các phần trước, phần này bổ sung thêm các tính n�
 - **Nội dung:**
   - `UIManager.cs`: Chứa các hàm cơ bản để quản lý Menu như bắt đầu game (`StartGame()`), thoát game (`ExitGame()`), và hiển thị/ẩn bảng Cài đặt (`settingsPanel`).
   - `DeLog.cs`: Dùng để gắn vào các Nút bấm (Button), cung cấp hàm `LogMessage()` in tin nhắn ra Console để kiểm thử sự kiện (OnClick Event).
+
+Demo 7
