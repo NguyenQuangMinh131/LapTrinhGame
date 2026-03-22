@@ -99,3 +99,4 @@ Kế thừa từ các phần trước, phần này bổ sung thêm các tính n�
   - `DeLog.cs`: Dùng để gắn vào các Nút bấm (Button), cung cấp hàm `LogMessage()` in tin nhắn ra Console để kiểm thử sự kiện (OnClick Event).
 
 Demo 7
+Demo 8
