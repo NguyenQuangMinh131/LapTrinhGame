@@ -7,19 +7,25 @@ public class Health : MonoBehaviour
     public GameObject explosionPrefab;
     public int defaultHealthPoint = 100;
     public System.Action onDead;
+    public System.Action onHealthChanged; // Sự kiện khi máu thay đổi
 
-    private int currentHealth;
+    public int healthPoint; // Máu hiện tại
 
     // Start is called before the first frame update
     protected virtual void Start()
     {
-        currentHealth = defaultHealthPoint;
+        healthPoint = defaultHealthPoint;
+        onHealthChanged?.Invoke();
     }
 
     public void TakeDamage(int damage)  
     {
-        currentHealth -= damage;
-        if (currentHealth <= 0)
+        if (healthPoint <= 0) return;
+
+        healthPoint -= damage;
+        onHealthChanged?.Invoke();
+
+        if (healthPoint <= 0)
         {
             Die();
         }
